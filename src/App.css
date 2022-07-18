@@ -1,0 +1,38 @@
+.App {
+	text-align: center;
+}
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+a {
+	text-decoration: none;
+}
+.logo {
+	font-weight: bold;
+	border: 2px solid rgb(66, 142, 172);
+	border-radius: 8px;
+	color: black;
+	background-color: rgb(66, 142, 172);
+	margin-right: 50px;
+}
+.carousel-item img {
+	height: 500px;
+	object-fit: cover;
+}
+.container p {
+	margin-top: 30px;
+	font-size: 1.2rem;
+}
+.container {
+	display: flex;
+}
+.card-img-top {
+	width: 250px;
+	height: 300px;
+	object-fit: contain;
+}
+.card{
+	background-color: rgb(66, 142, 172);
+}
