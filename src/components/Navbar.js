@@ -1,9 +1,14 @@
-import React, { useState } from 'react';
+import { useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Marketplace from '../pages/Marketplace';
+import { cartContext } from '../context/CartContext';
 
 function Navbar() {
-	
+	const { cartItems, numCartItems } = useContext(cartContext);
+
+	useEffect(() => {
+		console.log(numCartItems);
+	}, [numCartItems]);
+
 	return (
 		<div>
 			<nav className='navbar navbar-expand-lg navbar navbar-dark bg-dark'>
@@ -11,7 +16,7 @@ function Navbar() {
 					<Link className='logo' to='/'>
 						Bau M
 					</Link>
-          
+
 					<button
 						className='navbar-toggler'
 						type='button'
@@ -37,10 +42,14 @@ function Navbar() {
 							<Link to='/contactus'>
 								<li className='nav-item nav-link'>ContactUs</li>
 							</Link>
-						<Link to='/cart'>
-							<li className='nav-item'>
-								<i className='bi bi-cart nav-item nav-link'>0</i>
-							</li>
+							{console.log(cartItems)}
+							<Link to='/cart'>
+								<li className='nav-item'>
+									<i className='bi bi-cart nav-item nav-link'>
+										{numCartItems}
+										{/* {cartItems ? cartItems.length : 0} */}
+									</i>
+								</li>
 							</Link>
 
 							<Link to='/subscribe' className='nav-link'>

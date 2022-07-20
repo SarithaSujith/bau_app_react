@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Marketplace from './pages/Marketplace';
@@ -13,8 +13,7 @@ import Cart from'./components/Cart'
 function App() {
 	return (
 		<div className='App'>
-			<Router>
-				<Navbar />
+			<Navbar />
 				
 				<Routes>
 					<Route path='/' element={<Home />} />
@@ -27,7 +26,6 @@ function App() {
 					<Route path='/cart' element={<Cart/>}/>
 				</Routes>
 				<Footer />
-			</Router>
 		</div>
 	);
 }

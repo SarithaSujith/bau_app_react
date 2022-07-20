@@ -29,7 +29,7 @@ function Contactus() {
 						placeholder='name@example.com'
 					/>
 				</div>
-        <div className='mb-3'>
+				<div className='mb-3'>
 					<label className='form-label'>Your Company *</label>
 					<input
 						type='email'
