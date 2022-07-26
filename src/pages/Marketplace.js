@@ -17,19 +17,6 @@ function Marketplace() {
 		setdata,
 	} = useContext(cartContext);
 
-	// const [show, setShow] = useState(true);
-	// const onAdd = (item) => {
-	//   const exist = cartItems.find((x) => x.id === item.id);
-	//   if (exist) {
-	//     setCartItems(
-	//       cartItems.map((x) =>
-	//         x.id === item.id ? { ...exist, qty: exist.qty + 1 } : x
-	//       )
-	//     );
-	//   } else {
-	//     setCartItems([...cartItems, { ...item, qty: 1 }]);
-	//   }
-	// };
 	const handleClick = (values) => {
 		const newCartItems = cartItems;
 		if (!newCartItems) {

@@ -33,6 +33,11 @@ a {
 	height: 300px;
 	object-fit: contain;
 }
-.card{
+.card {
 	background-color: rgb(66, 142, 172);
+}
+#map {
+	height: 50%;
+	width: 50%;
+	border-radius:10px;
 }
